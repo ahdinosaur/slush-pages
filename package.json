@@ -14,7 +14,11 @@
     "slush",
     "slushgenerator",
     "generator",
-    "scaffold"
+    "scaffold",
+    "pages",
+    "static",
+    "gh-pages",
+    "ghpages"
   ],
   "author": "ahdinosaur",
   "license": "ISC",
