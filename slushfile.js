@@ -42,10 +42,14 @@ gulp.task('default', function (done) {
       // Include dotfiles
       dot: true,
     })
-      .pipe(template(answers)) // Lodash template support 
-      .pipe(conflict('./')) // Confirms overwrites on file conflicts 
-      .pipe(gulp.dest('./')) // Without __dirname here = relative to cwd 
-      .pipe(install()) // Run `bower install` and/or `npm install` if necessary 
+      // Lodash template support 
+      .pipe(template(answers)
+      // Confirms overwrites on file conflicts 
+      .pipe(conflict('./')) 
+      // Without __dirname here = relative to cwd 
+      .pipe(gulp.dest('./')) 
+      // Run `bower install` and/or `npm install` if necessary 
+      .pipe(install()) 
       .on('finish', function () {
         done(); // Finished! 
       });
