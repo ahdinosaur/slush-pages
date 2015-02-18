@@ -27,6 +27,7 @@
     "gulp-conflict": "^0.3.0",
     "gulp-install": "^0.2.0",
     "gulp-template": "^3.0.0",
-    "inquirer": "^0.8.0"
+    "inquirer": "^0.8.0",
+    "osi-licenses": "^0.1.0"
   }
 }

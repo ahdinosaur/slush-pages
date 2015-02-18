@@ -3,6 +3,7 @@ var install = require('gulp-install');
 var conflict = require('gulp-conflict');
 var template = require('gulp-template');
 var inquirer = require('inquirer');
+var licenses = require('osi-licenses');
  
 gulp.task('default', function (done) {
   inquirer.prompt([{
@@ -22,8 +23,10 @@ gulp.task('default', function (done) {
     message: "What is your name on GitHub?",
     default: 'author',
   }, {
-    type: 'input',
+    type: 'list',
     name: 'license',
+    message: "Choose a license:",
+    choices: Object.keys(licenses),
     default: 'ISC',
   }, {
     type: 'confirm',
