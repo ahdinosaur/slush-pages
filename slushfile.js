@@ -37,7 +37,11 @@ gulp.task('default', function (done) {
     if (!answers.moveon) {
       return done();
     }
-    gulp.src(__dirname + '/template/**')  // Note use of __dirname to be relative to generator 
+    // Note use of __dirname to be relative to generator 
+    gulp.src(__dirname + '/template/**', {
+      // Include dotfiles
+      dot: true,
+    })
       .pipe(template(answers)) // Lodash template support 
       .pipe(conflict('./')) // Confirms overwrites on file conflicts 
       .pipe(gulp.dest('./')) // Without __dirname here = relative to cwd 
