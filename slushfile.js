@@ -43,7 +43,7 @@ gulp.task('default', function (done) {
       dot: true,
     })
       // Lodash template support 
-      .pipe(template(answers)
+      .pipe(template(answers))
       // Confirms overwrites on file conflicts 
       .pipe(conflict('./')) 
       // Without __dirname here = relative to cwd 
