@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/ahdinosaur/slush-pages/issues"
   },
-  "homepage": "https://github.com/ahdinosaur/slush-pages"
+  "homepage": "https://github.com/ahdinosaur/slush-pages",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-conflict": "^0.3.0",
+    "gulp-install": "^0.2.0",
+    "gulp-template": "^3.0.0",
+    "inquirer": "^0.8.0"
+  }
 }
