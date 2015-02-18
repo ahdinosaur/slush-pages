@@ -8,9 +8,23 @@ gulp.task('default', function (done) {
   inquirer.prompt([{
     type: 'input',
     name: 'name',
-    message: 'Give your app a name',
+    message: "Give your app a name",
     // Get app name from arguments by default 
     default: gulp.args.join(' '),
+  }, {
+    type: 'input',
+    name: 'description',
+    message: "How would you describe the app?",
+    default: "it's a real sweet app",
+  }, {
+    type: 'input',
+    name: 'author',
+    message: "What is your name on GitHub?",
+    default: 'author',
+  }, {
+    type: 'input',
+    name: 'license',
+    default: 'ISC',
   }, {
     type: 'confirm',
     name: 'moveon',
