@@ -1,0 +1,25 @@
+{
+  "name": "slush-pages",
+  "version": "1.0.0-pre",
+  "description": "a slush generator for static pages using browserify",
+  "main": "slushfile.js",
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahdinosaur/slush-pages"
+  },
+  "keywords": [
+    "slush",
+    "slushgenerator",
+    "generator",
+    "scaffold"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/slush-pages/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/slush-pages"
+}

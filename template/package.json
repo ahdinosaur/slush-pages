@@ -1,0 +1,39 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy index.js:bundle.js 5000 --live",
+    "build": "browserify index.js -o bundle.js -g uglifyify",
+    "test": "testling",
+    "deploy": "npm run build && gh-pages-deploy"
+  },
+  "browserify": {
+    "transform": []
+  },
+  "gh-pages-deploy": {
+    "staticpath": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= author %>/<%= name %>"
+  },
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "bugs": {
+    "url": "https://github.com/<%= author %>/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/<%= author %>/<%= name %>",
+  "dependencies": {
+    "cat-ascii-faces": "latest",
+    "dom-select": "latest"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "beefy": "latest",
+    "gh-pages-deploy": "latest",
+    "uglifyify": "latest",
+    "watchify": "latest"
+  }
+}
