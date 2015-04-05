@@ -25,10 +25,7 @@
     "url": "https://github.com/<%= author %>/<%= name %>/issues"
   },
   "homepage": "https://github.com/<%= author %>/<%= name %>",
-  "dependencies": {
-    "cat-ascii-faces": "latest",
-    "dom-select": "latest"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "latest",
     "beefy": "latest",
