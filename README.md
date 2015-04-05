@@ -6,10 +6,10 @@
 
 ## Getting Started
 
-Install `slush-pages` globally:
+Install `slush` and `slush-pages` globally:
 
 ```bash
-$ npm install -g slush-pages
+$ npm install -g slush slush-pages
 ```
 
 ### Usage
@@ -25,6 +25,8 @@ Run the generator from within the new folder:
 ```bash
 $ cd my-slush-pages && slush pages
 ```
+
+Woo! Check out the generated README for more usage information.
 
 ## Getting To Know Slush
 
