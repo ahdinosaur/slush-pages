@@ -27,10 +27,10 @@
   "homepage": "https://github.com/<%= author %>/<%= name %>",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "latest",
     "beefy": "latest",
-    "gh-pages-deploy": "latest",
-    "uglifyify": "latest",
-    "watchify": "latest"
+    "browserify": "^9.0.7",
+    "gh-pages-deploy": "^0.3.0",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.1.0"
   }
 }
