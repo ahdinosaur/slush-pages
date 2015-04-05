@@ -19,6 +19,8 @@ npm install
 npm start
 ```
 
+browse to <http://localhost:9966/>.
+
 ## test
 
 ```
