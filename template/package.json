@@ -7,13 +7,14 @@
     "start": "beefy index.js:bundle.js 5000 --live",
     "build": "browserify index.js -o bundle.js -g uglifyify",
     "test": "run-browser test/* -b",
-    "deploy": "npm run build && gh-pages-deploy"
+    "deploy": "gh-pages-deploy"
   },
   "browserify": {
     "transform": []
   },
   "gh-pages-deploy": {
-    "staticpath": "."
+    "staticpath": ".",
+    "prep": "build"
   },
   "repository": {
     "type": "git",
