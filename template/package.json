@@ -6,7 +6,7 @@
   "scripts": {
     "start": "beefy index.js:bundle.js 5000 --live",
     "build": "browserify index.js -o bundle.js -g uglifyify",
-    "test": "testling",
+    "test": "run-browser test/* -b",
     "deploy": "npm run build && gh-pages-deploy"
   },
   "browserify": {
@@ -30,6 +30,8 @@
     "beefy": "latest",
     "browserify": "^9.0.7",
     "gh-pages-deploy": "^0.3.0",
+    "run-browser": "^2.0.2",
+    "tape": "^4.0.0",
     "uglifyify": "^3.0.1",
     "watchify": "^3.1.0"
   }
