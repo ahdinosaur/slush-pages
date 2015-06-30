@@ -24,8 +24,8 @@
   "homepage": "https://github.com/<%= author %>/<%= name %>",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^9.0.7",
-    "budo": "^2.1.3",
+    "browserify": "^10.0.0",
+    "budo": "^4.0.0",
     "gh-pages": "^0.3.0",
     "run-browser": "^2.0.2",
     "tape": "^4.0.0",
