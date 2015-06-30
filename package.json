@@ -1,6 +1,6 @@
 {
   "name": "slush-pages",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "a slush generator for static pages using browserify",
   "main": "slushfile.js",
   "scripts": {
