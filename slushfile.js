@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var install = require('gulp-install');
 var conflict = require('gulp-conflict');
 var template = require('gulp-template');
+var rename = require('gulp-rename')
 var inquirer = require('inquirer');
 var licenses = require('osi-licenses');
  
@@ -44,6 +45,12 @@ gulp.task('default', function (done) {
     })
       // Lodash template support 
       .pipe(template(answers))
+      // Rename dotfiles
+      .pipe(rename(function (file) {
+        if (file.basename[0] === '_') {
+          file.basename = '.' + file.basename.slice(1)
+        }
+      }))
       // Confirms overwrites on file conflicts 
       .pipe(conflict('./')) 
       // Without __dirname here = relative to cwd 
