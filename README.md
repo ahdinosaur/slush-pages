@@ -28,6 +28,22 @@ $ cd my-slush-pages && slush pages
 
 Woo! Check out the generated README for more usage information.
 
+## Adding ES6
+
+Install babelify and create a .babelrc file with the es2015 preset:
+```
+$ npm i --save-dev babelify babel-preset-es2015
+$ echo '{ "presets": ["es2015"] }' > .babelrc
+```
+
+Edit the package.json scripts to use babelify:
+
+```javascript
+"start": "budo index.js -t babelify -d --serve bundle.js --live",
+"build": "browserify index.js -t babelify -o bundle.js -g uglifyify",
+"test": "browserify test.js -t babelify | smokestack | tap-spec",                     
+```
+
 ## Getting To Know Slush
 
 Slush is a tool that uses Gulp for project scaffolding.
