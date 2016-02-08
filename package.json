@@ -1,7 +1,7 @@
 {
-  "name": "slush-pages",
-  "version": "1.4.2",
-  "description": "a slush generator for static pages using browserify",
+  "name": "slush-pages-react",
+  "version": "1.0.0",
+  "description": "a slush generator for static pages with react using browserify",
   "main": "slushfile.js",
   "scripts": {
     "test": "tape test"
@@ -20,12 +20,12 @@
     "gh-pages",
     "ghpages"
   ],
-  "author": "ahdinosaur",
+  "author": "pietgeursen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ahdinosaur/slush-pages/issues"
+    "url": "https://github.com/pietgeursen/slush-pages-react/issues"
   },
-  "homepage": "https://github.com/ahdinosaur/slush-pages",
+  "homepage": "https://github.com/pietgeursen/slush-pages-react",
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-conflict": "^0.3.0",
