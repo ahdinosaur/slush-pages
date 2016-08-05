@@ -9,7 +9,7 @@
 
 ```
 git clone https://github.com/<%= author %>/<%= name %>
-cd <% name %>
+cd <%= name %>
 npm install
 ```
 
